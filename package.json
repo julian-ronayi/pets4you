@@ -4,7 +4,8 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "eslint . --ext .js --ext .jsx --quiet"
   },
   "dependencies": {
     "@apollo/client": "^3.0.2",
@@ -15,5 +16,21 @@
     "react": "^16.7.0",
     "react-dom": "^16.7.0"
   },
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "7.5.0",
+    "eslint-config-airbnb": "18.2.0",
+    "eslint-plugin-deprecate": "0.7.0",
+    "eslint-plugin-graphql": "4.0.0",
+    "eslint-plugin-immutable": "1.0.0",
+    "eslint-plugin-import": "2.22.0",
+    "eslint-plugin-jest": "23.18.0",
+    "eslint-plugin-jsx-a11y": "6.3.1",
+    "eslint-plugin-no-secrets": "0.6.8",
+    "eslint-plugin-optimize-regex": "1.2.0",
+    "eslint-plugin-promise": "4.2.1",
+    "eslint-plugin-react": "7.20.3",
+    "eslint-plugin-react-hooks": "4.0.8",
+    "eslint-plugin-xss": "0.1.10"
+  }
 }

@@ -1,4 +1,4 @@
-import gql from 'graphql-tag'
+import gql from 'graphql-tag';
 import Link from 'next/link'
 import { useQuery } from '@apollo/client'
 import { initializeApollo } from '../apollo/client'
@@ -10,12 +10,12 @@ const HELLO_QUERY = gql`
 `
 
 const Index = () => {
-  const {
-    data: { hello },
-  } = useQuery(HELLO_QUERY)
+  const { data, loading } = useQuery(HELLO_QUERY);
+
+  if (loading) return <div>Loading</div>
 
   return (
-    <h1>This is text from apollo: {hello}</h1>
+    <h1>This is text from apollo: {data.hello}</h1>
   )
 }
 

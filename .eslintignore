@@ -1,0 +1,8 @@
+jest.config.js
+jest.setup.js
+next.config.js
+server
+postcss.config.js
+*.css
+vendor
+node_modules
